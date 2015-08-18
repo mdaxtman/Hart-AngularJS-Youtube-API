@@ -1,0 +1,10 @@
+<div class="container-fluid">
+  <div class="col-md-6">
+    <div player video-list='Video.playlist' video-id='Video.first.id.videoId' ></div>
+  </div>
+  <div class="col-md-6">
+    <ul class="pull-right" ng-repeat="video in Video.playlist">
+      <li> <img ng-src="{{video.snippet.thumbnails.default.url}}" ng-click="Video.loadNew(video, $index)"alt=""></li>
+    </ul>
+  </div>
+</div>
